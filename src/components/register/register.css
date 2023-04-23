@@ -1,0 +1,13 @@
+body{
+    background-color: rgb(236, 236, 236);
+}
+.regisBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: skyblue;
+    width: 30rem;
+    height: 20rem;
+    margin: auto;
+}
