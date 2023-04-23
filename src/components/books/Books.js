@@ -40,7 +40,7 @@ function Books() {
     },[valid])
 
     const getData = async () =>{
-        await fetch(`/getbooks/${valid.username}`, {
+        await fetch(`https://book-list-application-10x.onrender.com/getbooks/${valid.username}`, {
             method:"GET",
             headers:{
                 "Authorization":valid.token
@@ -78,7 +78,7 @@ function Books() {
 
     const handleDelete = async(id)=>{
         // console.log(id);
-        await fetch(`/deletebook/${id}`,{
+        await fetch(`https://book-list-application-10x.onrender.com/deletebook/${id}`,{
             method:"DELETE",
             headers:{
                 "Authorization":valid.token
@@ -105,7 +105,7 @@ function Books() {
     }
 
     const handleupdate = async ()=>{
-        await fetch("/editbook",{
+        await fetch("https://book-list-application-10x.onrender.com/editbook",{
             method:"PUT",
             headers:{
                 "content-type":"application/json",

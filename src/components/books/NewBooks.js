@@ -28,7 +28,7 @@ function NewBooks() {
     const handleAdd = async()=>{
         console.log(data);
         if(data.title!==null && data.author!==null && data.description!==null && data.publishedDate!==null, data.publisher!==null && data.genre!==null){
-            await fetch("/addbooks",{
+            await fetch("https://book-list-application-10x.onrender.com/addbooks",{
                 method:"POST",
                 headers:{
                     "content-type":"application/json",

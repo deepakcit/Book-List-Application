@@ -12,7 +12,7 @@ function Login() {
 
 const handleLogin = async ()=>{
     if(data.username !== null && data.password !== null){
-        await fetch("/login",{
+        await fetch("https://book-list-application-10x.onrender.com/login",{
             method:"POST",
             headers:{
                 "content-type":"application/json"
