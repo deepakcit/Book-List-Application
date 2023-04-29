@@ -1,8 +1,10 @@
-const moongose = require("mongoose");
+const mongoose = require("mongoose");
 
-const newUser = moongose.Schema({
+const newUser = mongoose.Schema({
     username:{type:String,required:true,unique:true},
     password:{type:String,required:true}
 })
-const Rmodel = moongose.model("users",newUser);
+
+const Rmodel = mongoose.model("users",newUser);
+
 module.exports = Rmodel;
